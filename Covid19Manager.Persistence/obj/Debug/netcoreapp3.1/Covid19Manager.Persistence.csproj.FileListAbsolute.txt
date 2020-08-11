@@ -1,0 +1,9 @@
+D:\projects\zavrsni\Covid19Manager\Covid19Manager.Persistence\bin\Debug\netcoreapp3.1\Covid19Manager.Persistence.deps.json
+D:\projects\zavrsni\Covid19Manager\Covid19Manager.Persistence\bin\Debug\netcoreapp3.1\Covid19Manager.Persistence.dll
+D:\projects\zavrsni\Covid19Manager\Covid19Manager.Persistence\bin\Debug\netcoreapp3.1\Covid19Manager.Persistence.pdb
+D:\projects\zavrsni\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.csprojAssemblyReference.cache
+D:\projects\zavrsni\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.AssemblyInfoInputs.cache
+D:\projects\zavrsni\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.AssemblyInfo.cs
+D:\projects\zavrsni\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.csproj.CoreCompileInputs.cache
+D:\projects\zavrsni\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.dll
+D:\projects\zavrsni\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.pdb

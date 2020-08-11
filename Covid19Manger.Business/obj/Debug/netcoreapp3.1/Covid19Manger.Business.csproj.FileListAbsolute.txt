@@ -1,0 +1,9 @@
+D:\projects\zavrsni\Covid19Manager\Covid19Manger.Business\bin\Debug\netcoreapp3.1\Covid19Manger.Business.deps.json
+D:\projects\zavrsni\Covid19Manager\Covid19Manger.Business\bin\Debug\netcoreapp3.1\Covid19Manger.Business.dll
+D:\projects\zavrsni\Covid19Manager\Covid19Manger.Business\bin\Debug\netcoreapp3.1\Covid19Manger.Business.pdb
+D:\projects\zavrsni\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.1\Covid19Manger.Business.AssemblyInfoInputs.cache
+D:\projects\zavrsni\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.1\Covid19Manger.Business.AssemblyInfo.cs
+D:\projects\zavrsni\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.1\Covid19Manger.Business.csproj.CoreCompileInputs.cache
+D:\projects\zavrsni\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.1\Covid19Manger.Business.dll
+D:\projects\zavrsni\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.1\Covid19Manger.Business.pdb
+D:\projects\zavrsni\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.1\Covid19Manger.Business.csprojAssemblyReference.cache

@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj",
+        "projectName": "Covid19Manager.Business.Tests",
+        "projectPath": "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj",
+        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manager.Business.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
+                "projectPath": "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.6.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.5, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
+        "projectName": "Covid19Manager.Business",
+        "projectPath": "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
+        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\zavrsni\\Covid19Manager\\Covid19Manger.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
