@@ -11,5 +11,7 @@ namespace Covid19Manager.Business.Repositories
         public Patient GetPatientDetails(int id);
         public void RemovePatientFromIsolation(int id);
         public int CreatePatient(Patient patient);
+        public PatientReport GetPatientsWithSymptoms();
+        public PatientReport GetPatientsThatBrokeIsolation();
     }
 }

@@ -26,7 +26,7 @@ namespace Covid19Manager.Business.UseCases
         private void VerifyPatient(Patient patient)
         {
             VerifyFirstName(patient);
-            VerifyLastName(patient);
+            VerifyLastName(patient);s
             VerifyIsolationAddress(patient);
             VerifyOib(patient);
             VerifyLat(patient);
