@@ -97,8 +97,8 @@ D:\projects\zavrsni\Covid19Manager\Covid19Manager.Business.Tests\obj\Debug\netco
 D:\projects\zavrsni\Covid19Manager\Covid19Manager.Business.Tests\obj\Debug\netcoreapp3.1\Covid19Manager.Business.Tests.dll
 D:\projects\zavrsni\Covid19Manager\Covid19Manager.Business.Tests\obj\Debug\netcoreapp3.1\Covid19Manager.Business.Tests.pdb
 D:\projects\zavrsni\Covid19Manager\Covid19Manager.Business.Tests\obj\Debug\netcoreapp3.1\Covid19Manager.Business.Tests.genruntimeconfig.cache
-D:\edu\c19m\Covid19Manager\Covid19Manager.Business.Tests\bin\Debug\netcoreapp3.1\testhost.exe
 D:\edu\c19m\Covid19Manager\Covid19Manager.Business.Tests\bin\Debug\netcoreapp3.1\testhost.dll
+D:\edu\c19m\Covid19Manager\Covid19Manager.Business.Tests\bin\Debug\netcoreapp3.1\testhost.exe
 D:\edu\c19m\Covid19Manager\Covid19Manager.Business.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 D:\edu\c19m\Covid19Manager\Covid19Manager.Business.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 D:\edu\c19m\Covid19Manager\Covid19Manager.Business.Tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll

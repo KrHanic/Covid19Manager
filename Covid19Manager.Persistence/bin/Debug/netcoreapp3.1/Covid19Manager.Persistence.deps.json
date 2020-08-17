@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "Covid19Manager.Persistence/1.0.0": {
+        "dependencies": {
+          "Covid19Manager.Business": "1.0.0"
+        },
         "runtime": {
           "Covid19Manager.Persistence.dll": {}
+        }
+      },
+      "Covid19Manager.Business/1.0.0": {
+        "runtime": {
+          "Covid19Manager.Business.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Covid19Manager.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Covid19Manager.Business/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

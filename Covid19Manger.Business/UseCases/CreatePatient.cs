@@ -1,12 +1,13 @@
 ﻿using Covid19Manager.Business.Entities;
 using Covid19Manager.Business.Repositories;
+using Covid19Manager.Business.UseCases.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Covid19Manager.Business.UseCases
 {
-    public class CreatePatient
+    public class CreatePatient : ICreatePatient
     {
         private IPatientRepo _patientRepo;
 
@@ -26,7 +27,7 @@ namespace Covid19Manager.Business.UseCases
         private void VerifyPatient(Patient patient)
         {
             VerifyFirstName(patient);
-            VerifyLastName(patient);s
+            VerifyLastName(patient);
             VerifyIsolationAddress(patient);
             VerifyOib(patient);
             VerifyLat(patient);

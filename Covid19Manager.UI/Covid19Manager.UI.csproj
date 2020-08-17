@@ -5,8 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\" />
+    <ProjectReference Include="..\Covid19Manager.Persistence\Covid19Manager.Persistence.csproj" />
+    <ProjectReference Include="..\Covid19Manger.Business\Covid19Manager.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Presenters\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
 
 </Project>

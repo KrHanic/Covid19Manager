@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Covid19Manager.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Covid19Manager.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Covid19Manager.Business.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Covid19Manager.Business/1.0.0": {
+      "type": "project",
+      "path": "../Covid19Manger.Business/Covid19Manager.Business.csproj",
+      "msbuildProject": "../Covid19Manger.Business/Covid19Manager.Business.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Covid19Manager.Business >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\khanic\\.nuget\\packages\\": {}
@@ -34,7 +53,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
+              "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

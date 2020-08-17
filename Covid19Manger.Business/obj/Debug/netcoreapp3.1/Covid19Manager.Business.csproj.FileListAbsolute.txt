@@ -10,7 +10,6 @@ D:\projects\zavrsni\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.
 D:\edu\c19m\Covid19Manager\Covid19Manger.Business\bin\Debug\netcoreapp3.1\Covid19Manager.Business.deps.json
 D:\edu\c19m\Covid19Manager\Covid19Manger.Business\bin\Debug\netcoreapp3.1\Covid19Manager.Business.dll
 D:\edu\c19m\Covid19Manager\Covid19Manger.Business\bin\Debug\netcoreapp3.1\Covid19Manager.Business.pdb
-D:\edu\c19m\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.1\Covid19Manager.Business.csprojAssemblyReference.cache
 D:\edu\c19m\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.1\Covid19Manager.Business.AssemblyInfoInputs.cache
 D:\edu\c19m\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.1\Covid19Manager.Business.AssemblyInfo.cs
 D:\edu\c19m\Covid19Manager\Covid19Manger.Business\obj\Debug\netcoreapp3.1\Covid19Manager.Business.csproj.CoreCompileInputs.cache
