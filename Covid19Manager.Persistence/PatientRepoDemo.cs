@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Covid19Manager.Persistence
 {
-    public class PatientRepo : IPatientRepo
+    public class PatientRepoDemo : IPatientRepo
     {
         public int CreatePatient(Patient patient)
         {
-            throw new NotImplementedException();
+            return 1;
         }
 
         public Patient GetPatientDetails(int id)
@@ -21,7 +21,18 @@ namespace Covid19Manager.Persistence
 
         public List<Patient> GetPatientsByStatus(int status)
         {
-            throw new NotImplementedException();
+            List<Patient> patients = new List<Patient>();
+            for(int i = 1; i < 10; i++)
+            {
+                patients.Add(new Patient() { 
+                    Id = i,
+                    OIB = i * 11111111111,
+                    FirstName = i.ToString(),
+                    LastName = i.ToString() + "ic",
+                    IsolationAddress = "majmunova " + i.ToString()
+                });
+            }
+            return patients;
         }
 
         public PatientReport GetPatientsThatBrokeIsolation(PatientFilter filter)

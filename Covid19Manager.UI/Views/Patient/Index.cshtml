@@ -1,8 +1,58 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<Covid19Manager.Business.Entities.Patient>
+
+@{
+    ViewData["Title"] = "Popis";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Popis</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="CreatePatient">Dodaj</a>
+</p>
+<table id="PatientTable" class="table-striped table-hover" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OIB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsolationAddress)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OIB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsolationAddress)
+            </td>
+            <td>
+                @Html.ActionLink("Detalji", "PatientDetails", new { id=item.Id  }, new { @class = "btn btn-info" }) |
+                @Html.ActionLink("Ukloni", "RemoveFromIsolation", new { id=item.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('#PatientTable').DataTable();
+    });
+</script>

@@ -9,6 +9,8 @@ using Covid19Manager.UI.Models;
 using Covid19Manager.UI.ViewModels;
 using Covid19Manager.Business.UseCases;
 using Covid19Manager.Business.Repositories;
+using Covid19Manager.Business.Entities;
+using Covid19Manager.Business.Common;
 
 namespace Covid19Manager.UI.Controllers
 {
@@ -24,7 +26,9 @@ namespace Covid19Manager.UI.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            GetPatients getPatients = new GetPatients(_patientRepo);
+            List<Patient> patients = getPatients.ByStatus((int)PatientStatus.Registered);
+            return View(patients);
         }
 
         [HttpGet]
@@ -39,15 +43,15 @@ namespace Covid19Manager.UI.Controllers
         {
             CreatePatient createPatient = new CreatePatient(_patientRepo);
             if (ModelState.IsValid) {
-                patientVM.ID = createPatient.Execute(new Business.Entities.Patient() { 
-                                    OIB = patientVM.OIB,
+                patientVM.ID = createPatient.Execute(new Patient() { 
+                                    OIB = patientVM.OIB.Value,
                                     FirstName = patientVM.FirstName,
                                     LastName = patientVM.LastName,
                                     IsolationAddress = patientVM.IsolationAddress,
                                     IsolationLat = patientVM.IsolationLat,
                                     IsolationLong = patientVM.IsolationLong
                 });
-                return View(createPatient);
+                return View(patientVM);
             }
             else
                 return View(patientVM);

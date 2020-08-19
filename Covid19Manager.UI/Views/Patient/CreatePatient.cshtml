@@ -4,9 +4,7 @@
     ViewData["Title"] = "CreatePatient";
 }
 
-<h1>CreatePatient</h1>
-
-<h4>CreatePatientVM</h4>
+<h1>Dodaj pacijenta</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -42,15 +40,25 @@
                 <input asp-for="IsolationLong" class="form-control" />
                 <span asp-validation-for="IsolationLong" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
+            @if (!Model.idIsSet)
+            {
+                <div class="form-group">
+                    <input type="submit" value="Dodaj" class="btn btn-success" />
+                </div>
+            }
         </form>
     </div>
+    @if (Model.idIsSet)
+    {
+        <div class="col-md-4" style="text-align: center; border-left: 1px solid #c2c2c2">
+            <h1>Pacijentov id:</h1>
+            <h3>@Html.Raw(Model.ID)</h3>
+        </div>
+    }
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-primary" asp-action="Index">Natrag</a>
 </div>
 
 @section Scripts {

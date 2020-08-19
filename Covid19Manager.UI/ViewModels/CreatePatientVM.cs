@@ -10,11 +10,11 @@ namespace Covid19Manager.UI.ViewModels
 {
     public class CreatePatientVM
     {
-        public int ID { get; set; }
+        public int? ID { get; set; }
 
         [Required(ErrorMessage = "Ovo polje je obavezno.")]
         [RegularExpression(@"\d{11}", ErrorMessage = "OIB mora sadržavati 11 znamenki.")]
-        public long OIB { get; set; }
+        public long? OIB { get; set; }
 
         [Required(ErrorMessage = "Ovo polje je obavezno.")]
         [DisplayName("Ime")]
@@ -29,14 +29,20 @@ namespace Covid19Manager.UI.ViewModels
         public string IsolationAddress { get; set; }
 
         [Required(ErrorMessage = "Ovo polje je obavezno.")]
-        [Range(-90, 90, ErrorMessage = "Latituda mora biti između -90 i 90.")]
+        [Range(-90.0d, 90.0d, ErrorMessage = "Latituda mora biti između -90 i 90.")]
         [DisplayName("Latituda")]
         public double? IsolationLat { get; set; }
 
         [Required(ErrorMessage = "Ovo polje je obavezno.")]
-        [Range(-180, 180, ErrorMessage = "Longituda mora biti između -180 i 180.")]
+        [Range(-180.0d, 180.0d, ErrorMessage = "Longituda mora biti između -180 i 180.")]
         [DisplayName("Longituda")]
         public double? IsolationLong { get; set; }
+
+        public bool idIsSet
+        {
+            get { return this.ID != null; }
+        }
+
 
     }
 }

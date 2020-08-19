@@ -134,7 +134,6 @@ D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Mana
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.TagHelpers.output.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.RazorCoreGenerate.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Patient\CreatePatient.cshtml.g.cs
-D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Patient\Index.cshtml.g.cs
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -149,3 +148,4 @@ D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\staticwebas
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.dll
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.pdb
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.genruntimeconfig.cache
+D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Patient\Index.cshtml.g.cs
