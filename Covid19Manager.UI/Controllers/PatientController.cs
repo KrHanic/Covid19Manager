@@ -11,6 +11,7 @@ using Covid19Manager.Business.UseCases;
 using Covid19Manager.Business.Repositories;
 using Covid19Manager.Business.Entities;
 using Covid19Manager.Business.Common;
+using Covid19Manager.UI.Presenters;
 
 namespace Covid19Manager.UI.Controllers
 {
@@ -27,8 +28,12 @@ namespace Covid19Manager.UI.Controllers
         public IActionResult Index()
         {
             GetPatients getPatients = new GetPatients(_patientRepo);
+            PatientTablePresenter patientTablePresenter = new PatientTablePresenter();
+
             List<Patient> patients = getPatients.ByStatus((int)PatientStatus.Registered);
-            return View(patients);
+            List<PatientTableVM> patientsVM = patientTablePresenter.SetRowColors(patients);
+
+            return View(patientsVM);
         }
 
         [HttpGet]

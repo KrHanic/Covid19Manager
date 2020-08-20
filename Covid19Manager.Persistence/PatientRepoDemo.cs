@@ -22,14 +22,27 @@ namespace Covid19Manager.Persistence
         public List<Patient> GetPatientsByStatus(int status)
         {
             List<Patient> patients = new List<Patient>();
-            for(int i = 1; i < 10; i++)
+            for (int i = 1; i < 11; i++)
             {
-                patients.Add(new Patient() { 
+                patients.Add(new Patient()
+                {
                     Id = i,
                     OIB = i * 11111111111,
                     FirstName = i.ToString(),
                     LastName = i.ToString() + "ic",
-                    IsolationAddress = "majmunova " + i.ToString()
+                    IsolationAddress = "majmunova " + i.ToString(),
+                    IsolationLat = 12.12,
+                    IsolationLong = 12.12,
+                    LastLocation = new Location()
+                    {
+                        PatientCurrentLat = 12.12 + i * 0.001,
+                        PatientCurrentLong = 12.12,
+                        Time = 202008191444
+                    },
+                    LastCondition = new Condition()
+                    {
+                        Temperature = 38 - i * 0.40
+                    }
                 });
             }
             return patients;

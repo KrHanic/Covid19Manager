@@ -126,8 +126,6 @@ D:\edu\c19m\Covid19Manager\Covid19Manager.UI\bin\Debug\netcoreapp3.1\Covid19Mana
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.csprojAssemblyReference.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.AssemblyInfoInputs.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.AssemblyInfo.cs
-D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.csproj.CoreCompileInputs.cache
-D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.MvcApplicationPartsAssemblyInfo.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.RazorAssemblyInfo.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.RazorAssemblyInfo.cs
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.TagHelpers.input.cache
@@ -149,3 +147,6 @@ D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Mana
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.pdb
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.genruntimeconfig.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Patient\Index.cshtml.g.cs
+D:\edu\c19m\Covid19Manager\Covid19Manager.UI\bin\Debug\netcoreapp3.1\Geolocation.dll
+D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.csproj.CoreCompileInputs.cache
+D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.MvcApplicationPartsAssemblyInfo.cache

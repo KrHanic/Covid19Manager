@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Mxg6Z6dSu/2gxEAZdpYNe466x2UZHYyyU4CX/8WgA1Nz2qan+AH4QAI2Xfh0Eiy1DUyie1UhP9B2Wq4JM8WCog==",
+  "dgSpecHash": "q8ETOBoT1YsAcaCazeHfuBp+MQOcpEJMKg/+/rSe+7Wzwu+myuS7QRfhAR1B2FnIaxt4SiAiSwjhmy2IsAYljw==",
   "success": true,
   "projectFilePath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.UI\\Covid19Manager.UI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\khanic\\.nuget\\packages\\geolocation\\1.2.1\\geolocation.1.2.1.nupkg.sha512",
     "C:\\Users\\khanic\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\khanic\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\khanic\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Covid19Manager.Business.Entities.Patient>
+﻿@model IEnumerable<Covid19Manager.UI.ViewModels.PatientTableVM>
 
 @{
     ViewData["Title"] = "Popis";
@@ -9,7 +9,7 @@
 <p>
     <a class="btn btn-primary" asp-action="CreatePatient">Dodaj</a>
 </p>
-<table id="PatientTable" class="table-striped table-hover" style="width:100%">
+<table id="PatientTable" class="table table-hover table-sm mdc-typography" style="width:100%; text-align: center;">
     <thead>
         <tr>
             <th>
@@ -29,7 +29,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+        <tr class="@Html.Raw(item.RowColor)">
             <td>
                 @Html.DisplayFor(modelItem => item.OIB)
             </td>
@@ -43,8 +43,8 @@
                 @Html.DisplayFor(modelItem => item.IsolationAddress)
             </td>
             <td>
-                @Html.ActionLink("Detalji", "PatientDetails", new { id=item.Id  }, new { @class = "btn btn-info" }) |
-                @Html.ActionLink("Ukloni", "RemoveFromIsolation", new { id=item.Id }, new { @class = "btn btn-danger" })
+                @Html.ActionLink("Detalji", "PatientDetails", new { id=item.ID  }, new { @class = "btn btn-info" }) |
+                @Html.ActionLink("Ukloni", "RemoveFromIsolation", new { id=item.ID }, new { @class = "btn btn-danger" })
             </td>
         </tr>
 }

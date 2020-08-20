@@ -105,6 +105,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Geolocation": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"
