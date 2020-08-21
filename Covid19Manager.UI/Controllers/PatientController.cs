@@ -62,6 +62,14 @@ namespace Covid19Manager.UI.Controllers
                 return View(patientVM);
         }
 
+        [HttpGet]
+        public IActionResult PatientDetails(int id)
+        {
+            GetPatientDetails getPatientDetails = new GetPatientDetails(_patientRepo);
+            Patient patient = getPatientDetails.Execute(id);
+            return View(patient);
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

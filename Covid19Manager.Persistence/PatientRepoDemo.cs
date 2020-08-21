@@ -16,7 +16,51 @@ namespace Covid19Manager.Persistence
 
         public Patient GetPatientDetails(int id)
         {
-            throw new NotImplementedException();
+            return new Patient()
+            {
+                Id = 1,
+                OIB = 11111111111,
+                FirstName = "ime",
+                LastName = "prezime",
+                IsolationAddress = "majmunova 3",
+                IsolationLat = 12.12,
+                IsolationLong = 12.12,
+                LastLocation = new Location()
+                {
+                    PatientCurrentLat = 12.12,
+                    PatientCurrentLong = 12.12,
+                    Time = 202008191444
+                },
+                LastCondition = new Condition()
+                {
+                    Temperature = 36,
+                    Cough = true,
+                    Fatigue = true,
+                    MusclePain = true,
+                    Time = 202008211405
+                },
+                ConditionHistory = new List<Condition>()
+                {
+                    new Condition()
+                    {
+                        Temperature = 36,
+                        Cough = true,
+                        Fatigue = true,
+                        MusclePain = true,
+                        Time = 202008211405
+                    },
+                    new Condition()
+                    {
+                        Temperature = 36.2,
+                        Time = 202008201407
+                    },
+                    new Condition()
+                    {
+                        Temperature = 36.3,
+                        Time = 202008191407
+                    }
+                }
+            };
         }
 
         public List<Patient> GetPatientsByStatus(int status)

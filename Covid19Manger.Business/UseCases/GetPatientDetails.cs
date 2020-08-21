@@ -1,11 +1,13 @@
-﻿using Covid19Manager.Business.Repositories;
+﻿using Covid19Manager.Business.Entities;
+using Covid19Manager.Business.Repositories;
+using Covid19Manager.Business.UseCases.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Covid19Manager.Business.UseCases
 {
-    public class GetPatientDetails
+    public class GetPatientDetails : IGetPatientDetails
     {
         private readonly IPatientRepo _patientRepo;
 
@@ -13,9 +15,9 @@ namespace Covid19Manager.Business.UseCases
         {
             _patientRepo = patientRepo;
         }
-        public void Execute(int id)
+        public Patient Execute(int id)
         {
-            _patientRepo.GetPatientDetails(id);
+            return _patientRepo.GetPatientDetails(id);
         }
     }
 }
