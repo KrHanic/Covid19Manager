@@ -150,3 +150,4 @@ D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\bin\Debug\netcoreapp3.1\Geolocation.dll
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.csproj.CoreCompileInputs.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.MvcApplicationPartsAssemblyInfo.cache
+D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Patient\PatientDetails.cshtml.g.cs

@@ -19,7 +19,7 @@ namespace Covid19Manager.Persistence
             return new Patient()
             {
                 Id = 1,
-                OIB = 11111111111,
+                //OIB = 11111111111,
                 FirstName = "ime",
                 LastName = "prezime",
                 IsolationAddress = "majmunova 3",
@@ -35,8 +35,8 @@ namespace Covid19Manager.Persistence
                 {
                     Temperature = 36,
                     Cough = true,
-                    Fatigue = true,
-                    MusclePain = true,
+                    Fatigue = false,
+                    //MusclePain = true,
                     Time = 202008211405
                 },
                 ConditionHistory = new List<Condition>()

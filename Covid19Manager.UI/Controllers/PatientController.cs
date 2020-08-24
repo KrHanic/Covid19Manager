@@ -66,8 +66,12 @@ namespace Covid19Manager.UI.Controllers
         public IActionResult PatientDetails(int id)
         {
             GetPatientDetails getPatientDetails = new GetPatientDetails(_patientRepo);
+            PatientDetailsPresenter presenter = new PatientDetailsPresenter();
+
             Patient patient = getPatientDetails.Execute(id);
-            return View(patient);
+            PatientDetailsVM details = presenter.Present(patient);
+
+            return View(details);
         }
 
 
