@@ -58,6 +58,41 @@ namespace Covid19Manager.Persistence
                     {
                         Temperature = 36.3,
                         Time = 202008191407
+                    },
+                    new Condition()
+                    {
+                        Temperature = 36.3,
+                        Time = 202008191407
+                    },
+                    new Condition()
+                    {
+                        Temperature = 36.3,
+                        Time = 202008191407
+                    },
+                    new Condition()
+                    {
+                        Temperature = 36.3,
+                        Time = 202008191407
+                    },
+                    new Condition()
+                    {
+                        Temperature = 36.3,
+                        Time = 202008191407
+                    },
+                    new Condition()
+                    {
+                        Temperature = 36.3,
+                        Time = 202008191407
+                    },
+                    new Condition()
+                    {
+                        Temperature = 36.3,
+                        Time = 202008191407
+                    },
+                    new Condition()
+                    {
+                        Temperature = 36.3,
+                        Time = 202008191407
                     }
                 }
             };

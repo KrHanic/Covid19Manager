@@ -1,4 +1,4 @@
-using Covid19Manager.Business.Entities;
+﻿using Covid19Manager.Business.Entities;
 using Covid19Manager.Business.UseCases.Interfaces;
 using Covid19Manager.UI.Presenters;
 using Covid19Manager.UI.ViewModels;
@@ -73,12 +73,16 @@ namespace Covid19Manager.UI.Tests
             Assert.AreEqual("majmunova 1", details.IsolationAddress);
             Assert.AreEqual("12,12", details.CurrentLat);
             Assert.AreEqual("12,12", details.CurrentLong);
-            Assert.AreEqual("202008240826", details.LocationTime);
-            Assert.AreEqual("36", details.Temperature);
+            Assert.AreEqual("24.08.2020 08:26", details.LocationTime);
+            Assert.AreEqual("36,0", details.Temperature);
             Assert.AreEqual("Ima", details.Cough);
-            Assert.AreEqual("Osje�a", details.Fatigue);
-            Assert.AreEqual("Osje�a", details.MusclePain);
-            Assert.AreEqual("202008240826", details.ConditionTime);
+            Assert.AreEqual("Osjeća", details.Fatigue);
+            Assert.AreEqual("Osjeća", details.MusclePain);
+            Assert.AreEqual("24.08.2020 08:26", details.ConditionTime);
+            Assert.AreEqual("24.08.2020 08:26", details.ConditionHistory[0].Time);
+            Assert.AreEqual("23.08.2020 08:26", details.ConditionHistory[1].Time);
+            Assert.AreEqual("22.08.2020 08:26", details.ConditionHistory[2].Time);
+            Assert.AreEqual("36,0", details.ConditionHistory[0].Temperature);
         }
 
         [TestMethod]
@@ -88,17 +92,17 @@ namespace Covid19Manager.UI.Tests
 
             PatientDetailsVM details = presenter.Present(new Patient());
 
-            Assert.AreEqual("Podatak nije prona�en.", details.OIB);
-            Assert.AreEqual("Podatak nije prona�en.", details.Name);
-            Assert.AreEqual("Podatak nije prona�en.", details.IsolationAddress);
-            Assert.AreEqual("Podatak nije prona�en.", details.CurrentLat);
-            Assert.AreEqual("Podatak nije prona�en.", details.CurrentLong);
-            Assert.AreEqual("Podatak nije prona�en.", details.LocationTime);
-            Assert.AreEqual("Podatak nije prona�en.", details.Temperature);
-            Assert.AreEqual("Podatak nije prona�en.", details.Cough);
-            Assert.AreEqual("Podatak nije prona�en.", details.Fatigue);
-            Assert.AreEqual("Podatak nije prona�en.", details.MusclePain);
-            Assert.AreEqual("Podatak nije prona�en.", details.ConditionTime);
+            Assert.AreEqual("Podatak nije pronađen.", details.OIB);
+            Assert.AreEqual("Podatak nije pronađen.", details.Name);
+            Assert.AreEqual("Podatak nije pronađen.", details.IsolationAddress);
+            Assert.AreEqual("Podatak nije pronađen.", details.CurrentLat);
+            Assert.AreEqual("Podatak nije pronađen.", details.CurrentLong);
+            Assert.AreEqual("Podatak nije pronađen.", details.LocationTime);
+            Assert.AreEqual("Podatak nije pronađen.", details.Temperature);
+            Assert.AreEqual("Podatak nije pronađen.", details.Cough);
+            Assert.AreEqual("Podatak nije pronađen.", details.Fatigue);
+            Assert.AreEqual("Podatak nije pronađen.", details.MusclePain);
+            Assert.AreEqual("Podatak nije pronađen.", details.ConditionTime);
         }
     }
 

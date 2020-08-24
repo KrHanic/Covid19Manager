@@ -8,75 +8,146 @@
 
 <div>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OIB)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OIB)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IsolationAddress)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IsolationAddress)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CurrentLat)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CurrentLat)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CurrentLong)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CurrentLong)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LocationTime)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.LocationTime)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Temperature)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Temperature)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cough)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cough)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Fatigue)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Fatigue)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MusclePain)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MusclePain)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ConditionTime)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ConditionTime)
-        </dd>
-    </dl>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pacijent</h5>
+                    <hr />
+                    <dl class="card-text">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.OIB)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.OIB)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Name)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.IsolationAddress)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.IsolationAddress)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Lokacija</h5>
+                    <hr />
+                    <dl class="card-text">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.CurrentLat)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.CurrentLat)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.CurrentLong)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.CurrentLong)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.LocationTime)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.LocationTime)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Stanje</h5>
+                    <hr />
+                    <dl class="card-text">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Temperature)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Temperature)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Cough)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Cough)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Fatigue)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Fatigue)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.MusclePain)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.MusclePain)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.ConditionTime)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.ConditionTime)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Povijest temperature</h5>
+                    <hr />
+                    <div class="card-text">
+                        <table id="TemperatureHistoryTable" class="table table-hover table-sm mdc-typography" style="width:100%; text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.ConditionHistory[0].Temperature)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.ConditionHistory[0].Time)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.ConditionHistory)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Temperature)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Time)
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
 </div>
+<hr />
 <div>
     <a class="btn btn-primary" asp-action="Index">Natrag</a>
 </div>
@@ -85,5 +156,6 @@
 <script>
     $(document).ready(function () {
         $("dd:contains('Podatak nije pronađen.')").css("color", "grey");
+        $('#TemperatureHistoryTable').DataTable();
     });
 </script>

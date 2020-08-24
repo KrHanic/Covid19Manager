@@ -2,6 +2,7 @@
 using Covid19Manager.UI.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -17,9 +18,58 @@ namespace Covid19Manager.UI.Presenters
 
             ConvertConditionHistory(patient, detailsVM);
             SetConditionBoolsToStrings(patient, detailsVM);
+            FormatTemperatureToOneDecimalPlace(patient, detailsVM);
             SetNotFoundStrings(patient, detailsVM);
+            FormatDateTimeStrings(detailsVM);
+            FormatConditionHistoryDateTime(detailsVM);
+            FormatConditionHistoryTemperatureToOneDecimalPlace(patient, detailsVM);
 
             return detailsVM;   
+        }
+
+        private void FormatConditionHistoryTemperatureToOneDecimalPlace(Patient patient, PatientDetailsVM detailsVM)
+        {
+            if (patient?.ConditionHistory != null)
+            {
+                for (int i = 0; i < patient.ConditionHistory.Count(); i++)
+                {
+                    detailsVM.ConditionHistory[i].Temperature = patient.ConditionHistory[i].Temperature.ToString("0.0");
+                }
+            }
+        }
+
+        private void FormatTemperatureToOneDecimalPlace(Patient patient, PatientDetailsVM detailsVM)
+        {
+            if (patient?.LastCondition?.Temperature != null)
+                detailsVM.Temperature = patient?.LastCondition?.Temperature.ToString("0.0"); 
+        }
+
+        private void FormatConditionHistoryDateTime(PatientDetailsVM detailsVM)
+        {
+            if (detailsVM?.ConditionHistory != null)
+            {
+                foreach (var condition in detailsVM.ConditionHistory)
+                {
+                    condition.Time = DateTime.ParseExact(
+                            condition.Time,
+                            "yyyyMMddHHmm", CultureInfo.InvariantCulture)
+                            .ToString("dd.MM.yyyy HH:mm");
+                }
+            }
+        }
+
+        private void FormatDateTimeStrings(PatientDetailsVM detailsVM)
+        {
+            if(detailsVM?.ConditionTime != null && detailsVM?.ConditionTime != "Podatak nije pronađen.")
+                detailsVM.ConditionTime = DateTime.ParseExact(
+                            detailsVM.ConditionTime,
+                            "yyyyMMddHHmm", CultureInfo.InvariantCulture)
+                            .ToString("dd.MM.yyyy HH:mm");
+            if (detailsVM?.LocationTime != null && detailsVM?.LocationTime != "Podatak nije pronađen.")
+                detailsVM.LocationTime = DateTime.ParseExact(
+                            detailsVM.LocationTime,
+                            "yyyyMMddHHmm", CultureInfo.InvariantCulture)
+                            .ToString("dd.MM.yyyy HH:mm");
         }
 
         private void ConvertConditionHistory(Patient patient, PatientDetailsVM detailsVM)
@@ -52,7 +102,7 @@ namespace Covid19Manager.UI.Presenters
             detailsVM.LocationTime = patient?.LastLocation?.Time != null ?
                     patient.LastLocation.Time.ToString() : "Podatak nije pronađen.";
             detailsVM.Temperature = patient?.LastCondition?.Temperature != null ?
-                    patient.LastCondition.Temperature.ToString() : "Podatak nije pronađen.";
+                    detailsVM.Temperature : "Podatak nije pronađen.";
             detailsVM.Cough = patient?.LastCondition?.Cough != null ?
                     detailsVM.Cough : "Podatak nije pronađen.";
             detailsVM.Fatigue = patient?.LastCondition?.Fatigue != null ?
