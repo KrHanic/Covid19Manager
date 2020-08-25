@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M5Ghi3HvyoVSLIrSFeI4XlrPtBX10NT+sFj2wCchMM1dmuGQwzn53Ch6SH5b1+8mwiu+h+3Y0I4rlaskMtv5xQ==",
+  "dgSpecHash": "l0EgJzkM0wHGFXCgFv7wNbIIk80nqA9KIGSYzlbQhMGyUBsNP9FA5hYsbjuwGalKgY9bCTWwuJUADxlIiBFJMA==",
   "success": true,
-  "projectFilePath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
+  "projectFilePath": "D:\\projects\\zavrsni_v3\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

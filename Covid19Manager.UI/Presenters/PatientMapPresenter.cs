@@ -1,5 +1,6 @@
 ﻿using Covid19Manager.Business.Entities;
 using Covid19Manager.UI.ViewModels;
+using Geolocation;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -21,10 +22,57 @@ namespace Covid19Manager.UI.Presenters
                 FormatTemperatureToOneDecimalPlace(patient, patientMapVM);
                 SetNotFoundStrings(patient, patientMapVM);
                 FormatDateTimeStrings(patientMapVM);
+                if (patientIsOutOfOneKmRadius(patient))
+                    setPatientColorOrange(patientMapVM);
+                else if (patientTempIsTooHigh(patient))
+                    setPatientColorRed(patientMapVM);
+                else
+                    setPatientColorGreen(patientMapVM);
 
                 patientVMs.Add(patientMapVM);
             }
             return patientVMs;
+        }
+
+        private void setPatientColorGreen(PatientMapVM patientMapVM)
+        {
+            patientMapVM.MapMarkerColor = "green";
+        }
+
+        private void setPatientColorRed(PatientMapVM patientMapVM)
+        {
+            patientMapVM.MapMarkerColor = "red";
+        }
+
+        private void setPatientColorOrange(PatientMapVM patientMapVM)
+        {
+            patientMapVM.MapMarkerColor = "orange";
+        }
+
+        private bool patientTempIsTooHigh(Patient patient)
+        {
+            if (!patient?.LastCondition?.Temperature.HasValue ?? true)
+                return false;
+            return patient.LastCondition.Temperature >= 37;
+        }
+
+        private bool patientIsOutOfOneKmRadius(Patient patient)
+        {
+            if (!patient.IsolationLat.HasValue
+                || !patient.IsolationLong.HasValue
+                || !patient.LastLocation.PatientCurrentLat.HasValue
+                || !patient.LastLocation.PatientCurrentLat.HasValue)
+                return false;
+
+            Coordinate IsolationCoordinates = 
+                new Coordinate(patient.IsolationLat.Value, patient.IsolationLong.Value);
+            Coordinate CurrentCoordinates = 
+                new Coordinate(patient.LastLocation.PatientCurrentLat.Value, patient.LastLocation.PatientCurrentLong.Value);
+
+            double distanceInMiles = GeoCalculator.GetDistance(IsolationCoordinates, CurrentCoordinates, 6);
+            double distanceInKm = distanceInMiles * 1.609344;
+
+            return distanceInKm > 1;
         }
 
         private void FormatDateTimeStrings(PatientMapVM patientMapVM)
@@ -44,7 +92,7 @@ namespace Covid19Manager.UI.Presenters
         private void FormatTemperatureToOneDecimalPlace(Patient patient, PatientMapVM patientMapVM)
         {
             if (patient?.LastCondition?.Temperature != null)
-                patientMapVM.Temperature = patient?.LastCondition?.Temperature.ToString("0.0");
+                patientMapVM.Temperature = patient?.LastCondition?.Temperature.Value.ToString("0.0");
         }
 
         private void SetConditionBoolsToStrings(Patient patient, PatientMapVM patientMapVM)
@@ -64,10 +112,10 @@ namespace Covid19Manager.UI.Presenters
         {
             patientMapVM.Name = patient?.LastName != null && patient?.FirstName != null ?
                     $"{patient.LastName} {patient.FirstName}" : "Podatak nije pronađen.";
-            patientMapVM.CurrentLat = patient?.LastLocation?.PatientCurrentLat != null ?
-                    patient.LastLocation.PatientCurrentLat.ToString() : "Podatak nije pronađen.";
-            patientMapVM.CurrentLong = patient?.LastLocation?.PatientCurrentLong != null ?
-                    patient.LastLocation.PatientCurrentLong.ToString() : "Podatak nije pronađen.";
+            patientMapVM.CurrentLat = patient?.LastLocation?.PatientCurrentLat.Value != null ?
+                    patient.LastLocation.PatientCurrentLat.Value.ToString() : "Podatak nije pronađen.";
+            patientMapVM.CurrentLong = patient?.LastLocation?.PatientCurrentLong.Value != null ?
+                    patient.LastLocation.PatientCurrentLong.Value.ToString() : "Podatak nije pronađen.";
             patientMapVM.LocationTime = patient?.LastLocation?.Time != null ?
                     patient.LastLocation.Time.ToString() : "Podatak nije pronađen.";
             patientMapVM.Temperature = patient?.LastCondition?.Temperature != null ?

@@ -47,7 +47,7 @@ namespace Covid19Manager.UI.Presenters
         private bool patientIsOutOfOneKmRadius(Patient patient)
         {
             Coordinate IsolationCoordinates = new Coordinate(patient.IsolationLat.Value, patient.IsolationLong.Value);
-            Coordinate CurrentCoordinates = new Coordinate(patient.LastLocation.PatientCurrentLat, patient.LastLocation.PatientCurrentLong);
+            Coordinate CurrentCoordinates = new Coordinate(patient.LastLocation.PatientCurrentLat.Value, patient.LastLocation.PatientCurrentLong.Value);
 
             double distanceInMiles = GeoCalculator.GetDistance(IsolationCoordinates, CurrentCoordinates, 6);
             double distanceInKm = distanceInMiles * 1.609344;

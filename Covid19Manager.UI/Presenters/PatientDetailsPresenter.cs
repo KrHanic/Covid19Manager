@@ -33,7 +33,7 @@ namespace Covid19Manager.UI.Presenters
             {
                 for (int i = 0; i < patient.ConditionHistory.Count(); i++)
                 {
-                    detailsVM.ConditionHistory[i].Temperature = patient.ConditionHistory[i].Temperature.ToString("0.0");
+                    detailsVM.ConditionHistory[i].Temperature = patient.ConditionHistory[i].Temperature.Value.ToString("0.0");
                 }
             }
         }
@@ -41,7 +41,7 @@ namespace Covid19Manager.UI.Presenters
         private void FormatTemperatureToOneDecimalPlace(Patient patient, PatientDetailsVM detailsVM)
         {
             if (patient?.LastCondition?.Temperature != null)
-                detailsVM.Temperature = patient?.LastCondition?.Temperature.ToString("0.0"); 
+                detailsVM.Temperature = patient?.LastCondition?.Temperature.Value.ToString("0.0"); 
         }
 
         private void FormatConditionHistoryDateTime(PatientDetailsVM detailsVM)

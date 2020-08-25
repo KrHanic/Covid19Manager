@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\khanic\\.nuget\\packages\\": {}
+    "C:\\Users\\Kristijan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
+      "projectUniqueName": "D:\\projects\\zavrsni_v3\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
       "projectName": "Covid19Manager.Persistence",
-      "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
-      "packagesPath": "C:\\Users\\khanic\\.nuget\\packages\\",
-      "outputPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\obj\\",
+      "projectPath": "D:\\projects\\zavrsni_v3\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
+      "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
+      "outputPath": "D:\\projects\\zavrsni_v3\\Covid19Manager\\Covid19Manager.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\khanic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -47,15 +47,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\local_nuget": {},
-        "http://mavenprod.unix.fina.hr:8081/artifactory/api/nuget/nuget-local": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
-              "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj"
+            "D:\\projects\\zavrsni_v3\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
+              "projectPath": "D:\\projects\\zavrsni_v3\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj"
             }
           }
         }
