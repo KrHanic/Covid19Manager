@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.UI\\Covid19Manager.UI.csproj": {}
+    "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.UI\\Covid19Manager.UI.csproj": {}
   },
   "projects": {
-    "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj": {
+    "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
+        "projectUniqueName": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
         "projectName": "Covid19Manager.Persistence",
-        "projectPath": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.Persistence\\obj\\",
+        "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
+        "packagesPath": "C:\\Users\\khanic\\.nuget\\packages\\",
+        "outputPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\khanic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,13 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\local_nuget": {},
+          "http://mavenprod.unix.fina.hr:8081/artifactory/api/nuget/nuget-local": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
-                "projectPath": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj"
+              "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
+                "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj"
               }
             }
           }
@@ -56,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.UI\\Covid19Manager.UI.csproj": {
+    "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.UI\\Covid19Manager.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.UI\\Covid19Manager.UI.csproj",
+        "projectUniqueName": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.UI\\Covid19Manager.UI.csproj",
         "projectName": "Covid19Manager.UI",
-        "projectPath": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.UI\\Covid19Manager.UI.csproj",
-        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.UI\\obj\\",
+        "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.UI\\Covid19Manager.UI.csproj",
+        "packagesPath": "C:\\Users\\khanic\\.nuget\\packages\\",
+        "outputPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\khanic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,16 +80,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\local_nuget": {},
+          "http://mavenprod.unix.fina.hr:8081/artifactory/api/nuget/nuget-local": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj": {
-                "projectPath": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj"
+              "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj": {
+                "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj"
               },
-              "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
-                "projectPath": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj"
+              "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
+                "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj"
               }
             }
           }
@@ -128,21 +132,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
+    "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
+        "projectUniqueName": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
         "projectName": "Covid19Manager.Business",
-        "projectPath": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
-        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\zavrsni_v2\\Covid19Manager\\Covid19Manger.Business\\obj\\",
+        "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
+        "packagesPath": "C:\\Users\\khanic\\.nuget\\packages\\",
+        "outputPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\khanic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,6 +154,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\local_nuget": {},
+          "http://mavenprod.unix.fina.hr:8081/artifactory/api/nuget/nuget-local": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -180,7 +186,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

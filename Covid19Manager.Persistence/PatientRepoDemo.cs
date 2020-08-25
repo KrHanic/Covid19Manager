@@ -18,8 +18,8 @@ namespace Covid19Manager.Persistence
         {
             return new Patient()
             {
-                Id = 1,
-                //OIB = 11111111111,
+                Id = 3,
+                OIB = 11111111111,
                 FirstName = "ime",
                 LastName = "prezime",
                 IsolationAddress = "majmunova 3",
@@ -139,7 +139,7 @@ namespace Covid19Manager.Persistence
 
         public void RemovePatientFromIsolation(int id)
         {
-            throw new NotImplementedException();
+            //do nothing
         }
     }
 }

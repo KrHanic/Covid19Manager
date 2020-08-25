@@ -1,0 +1,37 @@
+﻿@model Covid19Manager.UI.ViewModels.RemovePatientFromIsolationVM
+
+@{
+    ViewData["Title"] = "RemovePatientFromIsolation";
+}
+
+<h1>Ukloni pacijenta iz samoizolacije</h1>
+
+<h3>Jeste li sigurni da želite ukloniti pacijenta iz samoizolacije?</h3>
+<div>
+    <hr />
+    <form asp-action="RemovePatientFromIsolation">
+        @Html.Hidden("patient_id", Model.Patient_id, new { @ID = Int32.Parse(Model.Patient_id) })
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.OIB)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.OIB)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.IsolationaAddress)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IsolationaAddress)
+            </dd>
+        </dl>
+        <input type="submit" value="Ukloni" class="btn btn-danger" /> |
+        <a class="btn btn-primary" asp-action="Index">Natrag</a>
+    </form>
+</div>

@@ -74,6 +74,27 @@ namespace Covid19Manager.UI.Controllers
             return View(details);
         }
 
+        [HttpGet]
+        public IActionResult RemovePatientFromIsolation(int id)
+        {
+            GetPatientDetails getPatientDetails = new GetPatientDetails(_patientRepo);
+            RemovePatientFromIsolationPresenter presenter = new RemovePatientFromIsolationPresenter();
+
+            Patient patient = getPatientDetails.Execute(id);
+            RemovePatientFromIsolationVM patientInfo = presenter.Present(patient);
+
+            return View(patientInfo);
+        }
+
+        [HttpPost]
+        public IActionResult RemovePatientFromIsolation(string patient_id)
+        {
+            RemovePatientFromIsolation removePatientFromIsolation = new RemovePatientFromIsolation(_patientRepo);
+
+            removePatientFromIsolation.Execute(Int32.Parse(patient_id));
+
+            return RedirectToAction("Index");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

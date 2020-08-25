@@ -44,7 +44,7 @@
             </td>
             <td>
                 @Html.ActionLink("Detalji", "PatientDetails", new { id=item.ID  }, new { @class = "btn btn-info" }) |
-                @Html.ActionLink("Ukloni", "RemoveFromIsolation", new { id=item.ID }, new { @class = "btn btn-danger" })
+                @Html.ActionLink("Ukloni", "RemovePatientFromIsolation", new { id=item.ID }, new { @class = "btn btn-danger" })
             </td>
         </tr>
 }
