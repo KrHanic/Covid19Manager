@@ -120,7 +120,10 @@ namespace Covid19Manager.Persistence
                     },
                     LastCondition = new Condition()
                     {
-                        Temperature = 38 - i * 0.40
+                        Temperature = 38 - i * 0.40,
+                        Cough = true,
+                        Fatigue = false,
+                        Time = 202008260853
                     }
                 });
             }

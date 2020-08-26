@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Covid19Manager.UI.ViewModels.PatientMapVM>
+@{
+    ViewData["Title"] = "GetPatientsMap";
+}
+
+<h1>Karta pacijenata</h1>
+<hr />
+<div id="map"></div>
+
+<style>
+    #map {
+        height: 750px;
+    }
+    html, body {
+        height: 100%;
+    }
+</style>
+
+<script>
+    function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 3,
+            center: { lat: 45.815399, lng: 15.966568 }
+        });
+
+        var patients = JSON.parse('@Json.Serialize(Model)');
+        let markers = [];
+
+        patients.forEach(function (patient) {
+            let marker = new google.maps.Marker({
+                position: { lat: parseFloat(patient.currentLat), lng: parseFloat(patient.currentLong) },
+                icon: {
+                    url: `https://maps.google.com/mapfiles/ms/icons/${patient.mapMarkerColor}-dot.png`
+                }
+            });
+
+            let contentString = `<dl>
+                                <dt>Pacijent</dt>
+                                <dd>${patient.name}</dd>
+                                <dt>Temperatura</dt>
+                                <dd>${patient.temperature}</dd>
+                                <dt>Kašalj</dt>
+                                <dd>${patient.cough}</dd>
+                                <dt>Umor</dt>
+                                <dd>${patient.fatigue}</dd>
+                                <dt>Bol u mišićima</dt>
+                                <dd>${patient.musclePain}</dd>
+                                <dt>Zabilježeno</dt>
+                                <dd>${patient.conditionTime}</dd>
+                            </dl>`;
+
+            let infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            google.maps.event.addListener(marker, 'mouseover', function () {
+                infowindow.open(map, marker);
+            });
+
+            markers.push(marker);
+        });
+
+        var markerCluster = new MarkerClusterer(map, markers,
+            { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+    }
+</script>
+
+<script src="~/lib/googleMaps/markerclustererplus.min.js"></script>
+<script defer type="text/javascript" src="https://maps.google.com/maps/api/js?callback=initMap"></script>
+

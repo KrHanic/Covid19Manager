@@ -86,7 +86,7 @@ namespace Covid19Manager.UI.Tests
             PatientMapPresenter presenter = new PatientMapPresenter();
             //added values result in distance of 1.02Km
             patients[0].LastLocation.PatientCurrentLat += 0.007;
-            patients[0].LastLocation.PatientCurrentLat += 0.006;
+            patients[0].LastLocation.PatientCurrentLong += 0.006;
 
             List<PatientMapVM> patientVMs = presenter.Present(patients);
 

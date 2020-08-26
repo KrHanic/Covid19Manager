@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rsgYHHLHIh1x2SrSY25+0Ug3YsKlkAhPVpprzDCjbEBdeV1VBM6COi26lilIA6zu/PDpS3ulCmNOrT/waLtuXQ==",
+  "dgSpecHash": "eq0YKIsqwULkEdM3M/UjWBzv1jdgByMULd1+d+WT18fq/TyFS3TNfyi+yRM/gLVMj7CugjhobeJAQxqE4JRAOw==",
   "success": true,
-  "projectFilePath": "D:\\projects\\zavrsni_v3\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
+  "projectFilePath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

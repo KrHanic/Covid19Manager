@@ -41,6 +41,8 @@ namespace Covid19Manager.UI.Presenters
 
         private bool patientTempIsTooHigh(Patient patient)
         {
+            if (!patient?.LastCondition?.Temperature.HasValue ?? true)
+                return false;
             return patient.LastCondition.Temperature >= 37;
         }
 

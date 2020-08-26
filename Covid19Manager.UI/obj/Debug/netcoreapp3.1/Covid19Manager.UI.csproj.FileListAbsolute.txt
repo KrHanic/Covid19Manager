@@ -385,3 +385,4 @@ D:\projects\zavrsni_v3\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\
 D:\projects\zavrsni_v3\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.dll
 D:\projects\zavrsni_v3\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.pdb
 D:\projects\zavrsni_v3\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.genruntimeconfig.cache
+D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Patient\GetPatientsMap.cshtml.g.cs

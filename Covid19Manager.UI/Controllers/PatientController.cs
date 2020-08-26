@@ -96,6 +96,18 @@ namespace Covid19Manager.UI.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public IActionResult GetPatientsMap()
+        {
+            GetPatients getPatients = new GetPatients(_patientRepo);
+            PatientMapPresenter presenter = new PatientMapPresenter();
+
+            List<Patient> patients = getPatients.ByStatus((int)PatientStatus.Registered);
+            List<PatientMapVM> patientMapVMs = presenter.Present(patients);
+
+            return View(patientMapVMs);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -97,7 +97,7 @@ namespace Covid19Manager.UI.Presenters
 
         private void SetConditionBoolsToStrings(Patient patient, PatientMapVM patientMapVM)
         {
-            patientMapVM.Cough = patient?.LastCondition?.Cough.Value ?? false
+            patientMapVM.Cough = patient?.LastCondition?.Cough.HasValue ?? false
                                 && patient.LastCondition.Cough.Value
                                 ? "Ima" : "Nema";
             patientMapVM.Fatigue = patient?.LastCondition?.Fatigue ?? false
