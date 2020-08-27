@@ -12,6 +12,7 @@ using Covid19Manager.Business.Repositories;
 using Covid19Manager.Business.Entities;
 using Covid19Manager.Business.Common;
 using Covid19Manager.UI.Presenters;
+using Covid19Manager.UI.Enums;
 
 namespace Covid19Manager.UI.Controllers
 {
@@ -106,6 +107,23 @@ namespace Covid19Manager.UI.Controllers
             List<PatientMapVM> patientMapVMs = presenter.Present(patients);
 
             return View(patientMapVMs);
+        }
+
+        [HttpGet]
+        public IActionResult GetReportDashboard(PatientDashboardVM dashboardVM)
+        {
+            GetPatientReport getPatientReport = new GetPatientReport(_patientRepo);
+            PatientDashboardPresenter presenter = new PatientDashboardPresenter(dashboardVM);
+            PatientReport report = new PatientReport();
+
+            if (dashboardVM.ReportTableId == (int)PatientReportTables.PatientsOutOfOneKmRadius)
+                report = getPatientReport.GetPatientsThatBrokeIsolation(dashboardVM.Filter);
+            else
+                report = getPatientReport.GetPatientsWithSymptoms(dashboardVM.Filter);
+
+            dashboardVM = presenter.Present(report);
+
+            return View(dashboardVM);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

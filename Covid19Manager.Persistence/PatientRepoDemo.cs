@@ -132,12 +132,80 @@ namespace Covid19Manager.Persistence
 
         public PatientReport GetPatientsThatBrokeIsolation(PatientFilter filter)
         {
-            throw new NotImplementedException();
+            PatientReport report = new PatientReport();
+            List<Patient> patients = new List<Patient>();
+            for (int i = 1; i < 11; i++)
+            {
+                patients.Add(new Patient()
+                {
+                    Id = i,
+                    OIB = i * 11111111111,
+                    FirstName = i.ToString(),
+                    LastName = i.ToString() + "ic",
+                    IsolationAddress = "majmunova " + i.ToString(),
+                    IsolationLat = 12.12,
+                    IsolationLong = 12.12,
+                    LastLocation = new Location()
+                    {
+                        PatientCurrentLat = 12.12 + i * 0.001,
+                        PatientCurrentLong = 12.12,
+                        Time = 202008191444
+                    },
+                    LastCondition = new Condition()
+                    {
+                        Temperature = 38 - i * 0.40,
+                        Cough = true,
+                        Fatigue = false,
+                        Time = 202008260853
+                    }
+                });
+            }
+            report.Patients = patients;
+            report.NumberOfPatientsInIsolation = 10;
+            report.NumberOfPatientsOutOfIsolation = 9;
+            report.NumberOfPatientsThatBrokeIsolation = 8;
+            report.NumberOfPatientsWithSymptoms = 7;
+
+            return report;
         }
 
         public PatientReport GetPatientsWithSymptoms(PatientFilter filter)
         {
-            throw new NotImplementedException();
+            PatientReport report = new PatientReport();
+            List<Patient> patients = new List<Patient>();
+            for (int i = 1; i < 11; i++)
+            {
+                patients.Add(new Patient()
+                {
+                    Id = i,
+                    OIB = i * 11111111111,
+                    FirstName = i.ToString(),
+                    LastName = i.ToString() + "ic",
+                    IsolationAddress = "majmunova symp" + i.ToString(),
+                    IsolationLat = 12.12,
+                    IsolationLong = 12.12,
+                    LastLocation = new Location()
+                    {
+                        PatientCurrentLat = 12.12 + i * 0.001,
+                        PatientCurrentLong = 12.12,
+                        Time = 202008191444
+                    },
+                    LastCondition = new Condition()
+                    {
+                        Temperature = 38 - i * 0.40,
+                        Cough = true,
+                        Fatigue = false,
+                        Time = 202008260853
+                    }
+                });
+            }
+            report.Patients = patients;
+            report.NumberOfPatientsInIsolation = 10;
+            report.NumberOfPatientsOutOfIsolation = 9;
+            report.NumberOfPatientsThatBrokeIsolation = 8;
+            report.NumberOfPatientsWithSymptoms = 7;
+
+            return report;
         }
 
         public void RemovePatientFromIsolation(int id)

@@ -10,13 +10,13 @@ namespace Covid19Manager.UI.ViewModels
 {
     public class PatientDashboardVM
     {
-        [DisplayName("Broj osoba u samoizolaciji")]
+        [DisplayName("U samoizolaciji")]
         public string NumberOfPeopleInIsolation { get; set; }
-        [DisplayName("Broj osoba koje su iyašle iz samoizolacije")]
+        [DisplayName("Napustilo samoizolaciju")]
         public string NumberOfPeopleOutOfIsolation { get; set; }
-        [DisplayName("Broj osoba s prijavljenim simptomima")]
+        [DisplayName("Osoba sa simptomima")]
         public string NumberOfPeopleWithSymptoms { get; set; }
-        [DisplayName("Broj osoba koje su napuštale lokaciju samoizolacije")]
+        [DisplayName("Prekršilo samoizolaciju")]
         public string NumberOfPeopleOutOfOneKmRadius { get; set; }
         [DisplayName("Pacijenti koji su napuštali lokaciju")]
         public List<PatientReportTableVM> PatientsOutOfOneKmRadius { get; set; }
