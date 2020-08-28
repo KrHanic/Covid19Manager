@@ -51,8 +51,11 @@
     </tbody>
 </table>
 
+<script src="~/js/DataTables-hr.js"></script>
 <script>
     $(document).ready(function () {
-        $('#PatientTable').DataTable();
+        $('#PatientTable').DataTable({
+            "language": language_hr
+        });
     });
 </script>

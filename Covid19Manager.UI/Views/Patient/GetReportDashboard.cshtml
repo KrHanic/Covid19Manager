@@ -8,6 +8,27 @@
 <h1>Izvješća</h1>
 <hr />
 
+<h3>Filter</h3>
+@using (Html.BeginForm("GetReportDashboard", "Pacijent", FormMethod.Get))
+{
+    <div class="form-row">
+        <div class="col-lg-3">
+            <input type="text" class="form-control" placeholder="Last name">
+        </div>
+        <div class="col-lg-3">
+            <input type="text" class="form-control" placeholder="Last name">
+        </div>
+        <div class="col-lg-3">
+            <input type="text" class="form-control" placeholder="Last name">
+        </div>
+        <div class="col-lg-3">
+            <button type="submit" class="btn btn-primary float-right">Filtriraj</button>
+        </div>
+    </div>
+}
+
+<hr />
+
 <div class="row" style="text-align:center;">
     <div class="col-sm-3">
         <div class="card">
@@ -67,6 +88,7 @@
     </div>
 </div>
 <hr />
+
 <table id="ReportTable" class="table table-hover table-sm mdc-typography" style="width:100%; text-align: center;">
     <thead>
         <tr>
@@ -85,8 +107,8 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.ReportTableId == (int)PatientReportTables.PatientsOutOfOneKmRadius ? 
-            Model.PatientsOutOfOneKmRadius : Model.PatientsWithSymptoms)
+        @foreach (var item in Model.ReportTableId == (int)PatientReportTables.PatientsOutOfOneKmRadius ?
+           Model.PatientsOutOfOneKmRadius : Model.PatientsWithSymptoms)
         {
             <tr>
                 <td>
@@ -106,8 +128,11 @@
     </tbody>
 </table>
 
+<script src="~/js/DataTables-hr.js"></script>
 <script>
     $(document).ready(function () {
-        $('#ReportTable').DataTable();
+        $('#ReportTable').DataTable({
+            "language": language_hr
+        });
     });
 </script>

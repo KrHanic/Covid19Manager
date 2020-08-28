@@ -110,8 +110,9 @@ namespace Covid19Manager.UI.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetReportDashboard(PatientDashboardVM dashboardVM)
+        public IActionResult GetReportDashboard()
         {
+            PatientDashboardVM dashboardVM = new PatientDashboardVM();
             GetPatientReport getPatientReport = new GetPatientReport(_patientRepo);
             PatientDashboardPresenter presenter = new PatientDashboardPresenter(dashboardVM);
             PatientReport report = new PatientReport();

@@ -505,3 +505,4 @@ D:\projects\zavrsni_v4\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\
 D:\projects\zavrsni_v4\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.pdb
 D:\projects\zavrsni_v4\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Covid19Manager.UI.genruntimeconfig.cache
 D:\projects\zavrsni_v4\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Patient\GetReportDashboard.cshtml.g.cs
+D:\edu\c19m\Covid19Manager\Covid19Manager.UI\obj\Debug\netcoreapp3.1\Razor\Views\Patient\GetReportDashboard.cshtml.g.cs
