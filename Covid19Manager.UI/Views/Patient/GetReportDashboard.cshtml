@@ -13,15 +13,31 @@
 {
     <div class="form-row">
         <div class="col-lg-3">
-            <input type="text" class="form-control" placeholder="Last name">
+            <div class="input-group mb-3 date" data-provide="datepicker">
+                <input type="text" class="form-control" placeholder="Datum od" aria-label="Datum od" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2"><i class="far fa-calendar-alt"></i></span>
+                </div>
+            </div>
         </div>
         <div class="col-lg-3">
-            <input type="text" class="form-control" placeholder="Last name">
+            <div class="input-group mb-3 date">
+                <input type="text" class="form-control" placeholder="Datum do" aria-label="Datum do" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2"><i class="far fa-calendar-alt"></i></span>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3">
-            <input type="text" class="form-control" placeholder="Last name">
+        <div class="col-lg-4">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Pacijenti </label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01" asp-for="ReportTableId" asp-items="@Model.Reports"></select>
+            </div>
+            
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-2">
             <button type="submit" class="btn btn-primary float-right">Filtriraj</button>
         </div>
     </div>
@@ -129,10 +145,17 @@
 </table>
 
 <script src="~/js/DataTables-hr.js"></script>
+<script src="~/lib/DatePicker/bootstrap-datepicker.min.js"></script>
+<script src="~/lib/DatePicker/bootstrap-datepicker.hr.min.js"></script>
 <script>
     $(document).ready(function () {
         $('#ReportTable').DataTable({
             "language": language_hr
+        });
+        $('.date').datepicker({
+            format: 'dd.mm.yyyy',
+            language: 'hr',
+            autoclose: true
         });
     });
 </script>
