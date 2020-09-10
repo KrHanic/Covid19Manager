@@ -22,7 +22,8 @@ namespace Covid19Manager.UI.Presenters
         {
             if(_dashboardVM.IsJustCreated)
                 _dashboardVM = new PatientDashboardVM() { 
-                    IsJustCreated = false
+                    IsJustCreated = false,
+                    Filter = new PatientFilter()
                 };
 
             _dashboardVM.PatientsOutOfOneKmRadius = new List<PatientReportTableVM>();

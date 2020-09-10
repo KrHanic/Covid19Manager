@@ -9,20 +9,20 @@
 <hr />
 
 <h3>Filter</h3>
-@using (Html.BeginForm("GetReportDashboard", "Pacijent", FormMethod.Get))
+@using (Html.BeginForm("GetReportDashboard", "Patient", FormMethod.Get))
 {
     <div class="form-row">
         <div class="col-lg-3">
             <div class="input-group mb-3 date" data-provide="datepicker">
-                <input type="text" class="form-control" placeholder="Datum od" aria-label="Datum od" aria-describedby="basic-addon2">
+                <input type="text" asp-for="Filter.TimeFrom" class="form-control" placeholder="Datum od" aria-label="Datum od" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <span class="input-group-text" id="basic-addon2"><i class="far fa-calendar-alt"></i></span>
                 </div>
             </div>
         </div>
         <div class="col-lg-3">
-            <div class="input-group mb-3 date">
-                <input type="text" class="form-control" placeholder="Datum do" aria-label="Datum do" aria-describedby="basic-addon2">
+            <div class="input-group mb-3 date"  data-provide="datepicker">
+                <input type="text" asp-for="Filter.TimeTo" class="form-control" placeholder="Datum do" aria-label="Datum do" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <span class="input-group-text" id="basic-addon2"><i class="far fa-calendar-alt"></i></span>
                 </div>
@@ -35,8 +35,8 @@
                 </div>
                 <select class="custom-select" id="inputGroupSelect01" asp-for="ReportTableId" asp-items="@Model.Reports"></select>
             </div>
-            
         </div>
+        @Html.HiddenFor(m => m.IsJustCreated)
         <div class="col-lg-2">
             <button type="submit" class="btn btn-primary float-right">Filtriraj</button>
         </div>

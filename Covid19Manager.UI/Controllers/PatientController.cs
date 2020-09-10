@@ -110,21 +110,27 @@ namespace Covid19Manager.UI.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetReportDashboard()
+        public IActionResult GetReportDashboard(PatientDashboardVM dashboardVM)
         {
-            PatientDashboardVM dashboardVM = new PatientDashboardVM();
+            PatientDashboardVM _dashboardVM;
+
+            if (dashboardVM?.Filter?.TimeFrom != null)
+                _dashboardVM = dashboardVM;
+            else
+                _dashboardVM = new PatientDashboardVM();
+
             GetPatientReport getPatientReport = new GetPatientReport(_patientRepo);
-            PatientDashboardPresenter presenter = new PatientDashboardPresenter(dashboardVM);
+            PatientDashboardPresenter presenter = new PatientDashboardPresenter(_dashboardVM);
             PatientReport report = new PatientReport();
 
-            if (dashboardVM.ReportTableId == (int)PatientReportTables.PatientsOutOfOneKmRadius)
-                report = getPatientReport.GetPatientsThatBrokeIsolation(dashboardVM.Filter);
+            if (_dashboardVM.ReportTableId == (int)PatientReportTables.PatientsOutOfOneKmRadius)
+                report = getPatientReport.GetPatientsThatBrokeIsolation(_dashboardVM.Filter);
             else
-                report = getPatientReport.GetPatientsWithSymptoms(dashboardVM.Filter);
+                report = getPatientReport.GetPatientsWithSymptoms(_dashboardVM.Filter);
 
-            dashboardVM = presenter.Present(report);
+            _dashboardVM = presenter.Present(report);
 
-            return View(dashboardVM);
+            return View(_dashboardVM);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
