@@ -15,7 +15,6 @@ D:\edu\c19m\Covid19Manager\Covid19Manager.Persistence\bin\Debug\netcoreapp3.1\Co
 D:\edu\c19m\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.csprojAssemblyReference.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.AssemblyInfoInputs.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.AssemblyInfo.cs
-D:\edu\c19m\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.csproj.CoreCompileInputs.cache
 D:\edu\c19m\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.csproj.CopyComplete
 D:\edu\c19m\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.dll
 D:\edu\c19m\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.pdb
@@ -55,3 +54,4 @@ D:\projects\zavrsni_v4\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netco
 D:\projects\zavrsni_v4\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.csproj.CopyComplete
 D:\projects\zavrsni_v4\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.dll
 D:\projects\zavrsni_v4\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.pdb
+D:\edu\c19m\Covid19Manager\Covid19Manager.Persistence\obj\Debug\netcoreapp3.1\Covid19Manager.Persistence.csproj.CoreCompileInputs.cache

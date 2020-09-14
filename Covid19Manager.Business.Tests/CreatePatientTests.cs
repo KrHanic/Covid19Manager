@@ -46,7 +46,7 @@ namespace Covid19Manager.Business.Tests
         {
             createPatient.Execute(patient);
 
-            AreEqual(1, patient.StatusId);
+            AreEqual(2, patient.StatusId);
         }
 
         [TestMethod]

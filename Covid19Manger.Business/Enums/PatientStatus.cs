@@ -6,8 +6,8 @@ namespace Covid19Manager.Business.Common
 {
     public enum PatientStatus
     {
-        NotRegistered = 1,
-        Registered = 2,
+        Registered = 1,
+        NotRegistered = 2,
         RemovedFromIsolation = 3
     }
 }

@@ -72,7 +72,7 @@ namespace Covid19Manager.Business.UseCases
 
         private void SetPatientStatusToUnregistered(Patient patient)
         {
-            patient.StatusId = 1;
+            patient.StatusId = 2;
         }
     }
 }

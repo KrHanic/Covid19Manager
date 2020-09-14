@@ -22,7 +22,7 @@ namespace Covid19Manager.UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddTransient<IPatientRepo, PatientRepoDemo>();
+            services.AddTransient<IPatientRepo, PatientRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
