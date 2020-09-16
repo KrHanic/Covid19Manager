@@ -7,8 +7,8 @@ namespace Covid19Manager.Business.Common
 {
     public class PatientFilter
     {
-        private long _timeFrom = Convert.ToInt64(DateTime.Now.AddYears(-1).ToString("yyyyMMddHHmm"));
-        private long _timeTo { get; set; } = Convert.ToInt64(DateTime.Now.ToString("yyyyMMddHHmm"));
+        private long _timeFrom = Convert.ToInt64(DateTime.Now.AddYears(-1).ToString("yyyyMMdd")) * 10000;
+        private long _timeTo { get; set; } = Convert.ToInt64(DateTime.Now.ToString("yyyyMMdd")) * 10000;
 
         public string TimeFrom
         {
