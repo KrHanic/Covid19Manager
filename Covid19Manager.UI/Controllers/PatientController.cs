@@ -117,7 +117,9 @@ namespace Covid19Manager.UI.Controllers
             if (dashboardVM?.Filter?.TimeFrom != null)
                 _dashboardVM = dashboardVM;
             else
-                _dashboardVM = new PatientDashboardVM();
+                _dashboardVM = new PatientDashboardVM() {
+                    Filter = new PatientFilter()
+                };
 
             GetPatientReport getPatientReport = new GetPatientReport(_patientRepo);
             PatientDashboardPresenter presenter = new PatientDashboardPresenter(_dashboardVM);

@@ -40,5 +40,20 @@ namespace Covid19Manager.Business.Common
                           .ToString("yyyyMMddHHmm"));
             }
         }
+
+        public long TimeFromApiFormat
+        {
+            get
+            {
+                return _timeFrom;
+            }
+        }
+        public long TimeToApiFormat
+        {
+            get
+            {
+                return _timeTo;
+            }
+        }
     }
 }

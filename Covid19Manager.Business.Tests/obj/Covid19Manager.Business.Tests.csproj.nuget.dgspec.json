@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj": {}
+    "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj": {}
   },
   "projects": {
-    "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj": {
+    "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj",
+        "projectUniqueName": "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj",
         "projectName": "Covid19Manager.Business.Tests",
-        "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj",
-        "packagesPath": "C:\\Users\\khanic\\.nuget\\packages\\",
-        "outputPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Business.Tests\\obj\\",
+        "projectPath": "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manager.Business.Tests\\Covid19Manager.Business.Tests.csproj",
+        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manager.Business.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\khanic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +22,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\local_nuget": {},
-          "http://mavenprod.unix.fina.hr:8081/artifactory/api/nuget/nuget-local": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
-                "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj"
+              "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
+                "projectPath": "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj"
               }
             }
           }
@@ -86,17 +84,17 @@
         }
       }
     },
-    "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
+    "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
+        "projectUniqueName": "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
         "projectName": "Covid19Manager.Business",
-        "projectPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
-        "packagesPath": "C:\\Users\\khanic\\.nuget\\packages\\",
-        "outputPath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manger.Business\\obj\\",
+        "projectPath": "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manger.Business\\Covid19Manager.Business.csproj",
+        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manger.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\khanic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,8 +102,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\local_nuget": {},
-          "http://mavenprod.unix.fina.hr:8081/artifactory/api/nuget/nuget-local": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

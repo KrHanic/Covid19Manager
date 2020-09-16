@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SY2FYVk9iytdlrCR86jX/zUkgm8Qf+a3l4eDiOBlEKoIePyxrPj8EsvMzcfi1bGxpPk7LVFLyNY0AtgVRQtZ4g==",
+  "dgSpecHash": "V2h0sxoUqdkIxWA8zLbLIue2+tnUF289STk1MJVSTKbXY8qxG5qAlO5K6hSreKpvub3mU3grIbjMCdRPk+HsoA==",
   "success": true,
-  "projectFilePath": "D:\\edu\\c19m\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
+  "projectFilePath": "D:\\projects\\zavrsni_v6\\Covid19Manager\\Covid19Manager.Persistence\\Covid19Manager.Persistence.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\khanic\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\Kristijan\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

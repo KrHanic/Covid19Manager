@@ -22,7 +22,7 @@ namespace Covid19Manager.Persistence
                 OIB = 11111111111,
                 FirstName = "ime",
                 LastName = "prezime",
-                IsolationAddress = "majmunova 3",
+                IsolationAddress = "Ul. Prva 3",
                 IsolationLat = 12.12,
                 IsolationLong = 12.12,
                 LastLocation = new Location()
@@ -109,7 +109,7 @@ namespace Covid19Manager.Persistence
                     OIB = i * 11111111111,
                     FirstName = i.ToString(),
                     LastName = i.ToString() + "ic",
-                    IsolationAddress = "majmunova " + i.ToString(),
+                    IsolationAddress = "Ul. prva " + i.ToString(),
                     IsolationLat = 12.12,
                     IsolationLong = 12.12,
                     LastLocation = new Location()
@@ -142,7 +142,7 @@ namespace Covid19Manager.Persistence
                     OIB = i * 11111111111,
                     FirstName = i.ToString(),
                     LastName = i.ToString() + "ic",
-                    IsolationAddress = "majmunova " + i.ToString(),
+                    IsolationAddress = "Ul. Iso " + i.ToString(),
                     IsolationLat = 12.12,
                     IsolationLong = 12.12,
                     LastLocation = new Location()
@@ -181,7 +181,7 @@ namespace Covid19Manager.Persistence
                     OIB = i * 11111111111,
                     FirstName = i.ToString(),
                     LastName = i.ToString() + "ic",
-                    IsolationAddress = "majmunova symp" + i.ToString(),
+                    IsolationAddress = "Ul. Symp" + i.ToString(),
                     IsolationLat = 12.12,
                     IsolationLong = 12.12,
                     LastLocation = new Location()

@@ -116,9 +116,9 @@ namespace Covid19Manager.UI.Presenters
                     patient.LastLocation.PatientCurrentLat.Value.ToString() : "Podatak nije pronađen.";
             patientMapVM.CurrentLong = patient?.LastLocation?.PatientCurrentLong.Value != null ?
                     patient.LastLocation.PatientCurrentLong.Value.ToString() : "Podatak nije pronađen.";
-            patientMapVM.LocationTime = patient?.LastLocation?.Time != null ?
+            patientMapVM.LocationTime = patient?.LastLocation?.Time != null && patient?.LastLocation?.Time > 100000000000 ?
                     patient.LastLocation.Time.ToString() : "Podatak nije pronađen.";
-            patientMapVM.Temperature = patient?.LastCondition?.Temperature != null ?
+            patientMapVM.Temperature = patient?.LastCondition?.Temperature != null && patient?.LastCondition?.Temperature > 30 ?
                     patientMapVM.Temperature : "Podatak nije pronađen.";
             patientMapVM.Cough = patient?.LastCondition?.Cough != null ?
                     patientMapVM.Cough : "Podatak nije pronađen.";
@@ -126,7 +126,7 @@ namespace Covid19Manager.UI.Presenters
                     patientMapVM.Fatigue : "Podatak nije pronađen.";
             patientMapVM.MusclePain = patient?.LastCondition?.MusclePain != null ?
                     patientMapVM.MusclePain : "Podatak nije pronađen.";
-            patientMapVM.ConditionTime = patient?.LastCondition?.Time != null ?
+            patientMapVM.ConditionTime = patient?.LastCondition?.Time != null && patient?.LastCondition?.Time > 100000000000 ?
                     patient.LastCondition.Time.ToString() : "Podatak nije pronađen.";
         }
     }

@@ -156,6 +156,8 @@
 <script>
     $(document).ready(function () {
         $("dd:contains('Podatak nije pronađen.')").css("color", "grey");
-        $('#TemperatureHistoryTable').DataTable();
+        $('#TemperatureHistoryTable').DataTable({
+            "pageLength": 6
+        });
     });
 </script>

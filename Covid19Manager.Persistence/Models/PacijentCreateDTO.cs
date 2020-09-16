@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Covid19Manager.Persistence.Models
 {
-    public class CreatePatient
+    public class PacijentCreateDTO
     {
         public long Oib { get; set; }
         public string Ime { get; set; }
